@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register page</title>
+</head>
+<body>
+<center>
+	<div>
+		<form action="/" method="POST">
+			{% csrf_token %}
+			<input type="text" name="name" placeholder="name"><br><br>
+			<input type="email" name="email" placeholder="email id"><br><br>
+			<input type="password" name="passwrd" placeholder="password"><br><br>
+			<input type="password" name="re_passwrd" placeholder="re-type password"><br><br>
+			<input type="submit" value="register"><br><br>
+		</form>
+		<a href="/login/">already have an account</a>
+	</div>
+</center>
+</body>
+</html>

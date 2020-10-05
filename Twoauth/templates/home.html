@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home page</title>
+</head>
+<body>
+	<h1>welcome, {{ l.name }}</h1>
+	<a href="/login/" style="float: right;">Logout</a><br><br><br>
+	<form action="/home/" method="POST">
+		{% csrf_token %}
+		<input type="checkbox" name="twoauth" value="enable">
+		<input type="submit" value="enable">
+	</form>
+</body>
+</html>
